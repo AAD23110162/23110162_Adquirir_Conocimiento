@@ -1,0 +1,13 @@
+{
+  "marca": {
+    "nombre": "FIUNVA",
+    "descripcion": "Soluciones de desarrollo, automatización y mantenimiento para clientes empresariales."
+  },
+  "servicios": {
+    "que servicios ofrecen": "Ofrecemos desarrollo web, automatización industrial y mantenimiento de sistemas.",
+    "horario": "Nuestro horario es de lunes a viernes de 9am a 6pm."
+  },
+  "faq_aprendidas": {
+    "hola": "Hola, soy FIUNVA CHAT, en que te puedo ayudar?"
+  }
+}

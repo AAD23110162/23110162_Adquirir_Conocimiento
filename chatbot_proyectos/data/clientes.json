@@ -1,0 +1,56 @@
+{
+  "clientes": {
+    "1234": {
+      "nombre": "Juan Perez",
+      "proyectos": {
+        "pagina web": "En desarrollo (50%)",
+        "sistema de inventario": "Finalizado"
+      },
+      "cotizaciones": []
+    },
+    "9001": {
+      "nombre": "Ana Lopez",
+      "proyectos": {
+        "App Movil": "Cotización recibida - En revisión comercial"
+      },
+      "cotizaciones": [
+        {
+          "id": "COT-001",
+          "fecha_registro": "2026-03-04 16:02:01",
+          "estado": "Borrador confirmado",
+          "caracteristicas": {
+            "nombre_proyecto": "App Movil",
+            "objetivo": "Crear app para ventas",
+            "alcance": "MVP con login y catalogo",
+            "tecnologias": "Flutter + Firebase",
+            "presupuesto_estimado": "15000 USD",
+            "fecha_deseada": "2026-05-01"
+          },
+          "borrador": "\n--- BORRADOR DE PROYECTO ---\nCliente: Ana Lopez (Código: 9001)\nProyecto: App Movil\nObjetivo: Crear app para ventas\nAlcance: MVP con login y catalogo\nTecnologías/plataforma: Flutter + Firebase\nPresupuesto estimado: 15000 USD\nFecha deseada: 2026-05-01\nEstado inicial: Borrador confirmado por cliente\n-----------------------------"
+        }
+      ]
+    },
+    "0000": {
+      "nombre": "Alejandro",
+      "proyectos": {
+        "AGUA MIGAJA": "Cotización recibida - En revisión comercial"
+      },
+      "cotizaciones": [
+        {
+          "id": "COT-001",
+          "fecha_registro": "2026-03-04 17:40:18",
+          "estado": "Borrador confirmado",
+          "caracteristicas": {
+            "nombre_proyecto": "AGUA MIGAJA",
+            "objetivo": "crear un sistema domestigo de riego por goteo para parcelas pequeñas para el cultivo de hortalizas",
+            "alcance": "Sistema de control, parcela prototipo de 0.5X1m, tanque de agua con bomba y app de celular para envio y recepcion de datos del sistema",
+            "tecnologias": "ESP32 programada en el IDE de Arduino, App desarrollada en Androdi Studio, base de datos en SQL.",
+            "presupuesto_estimado": "8000",
+            "fecha_deseada": "1 mayo del 2026"
+          },
+          "borrador": "\n--- BORRADOR DE PROYECTO ---\nCliente: Alejandro (Código: 0000)\nProyecto: AGUA MIGAJA\nObjetivo: crear un sistema domestigo de riego por goteo para parcelas pequeñas para el cultivo de hortalizas\nAlcance: Sistema de control, parcela prototipo de 0.5X1m, tanque de agua con bomba y app de celular para envio y recepcion de datos del sistema\nTecnologías/plataforma: ESP32 programada en el IDE de Arduino, App desarrollada en Androdi Studio, base de datos en SQL.\nPresupuesto estimado: 8000\nFecha deseada: 1 mayo del 2026\nEstado inicial: Borrador confirmado por cliente\n-----------------------------"
+        }
+      ]
+    }
+  }
+}
