@@ -27,17 +27,51 @@ chatbot_proyectos/
 		└── marca.json
 ```
 
-## Archivos de datos
+## Descripción técnica de scripts Python
+
+- `app.py`
+	- Punto de entrada de la aplicación.
+	- Ejecuta `ejecutar_chat()` y captura `KeyboardInterrupt` / `EOFError` para cerrar sin traceback.
+
+- `core/chatbot.py`
+	- Orquesta el ciclo principal del chat (`while` de interacción).
+	- Detecta intención de consulta de servicios, estatus de proyectos y cotización.
+	- Gestiona aprendizaje dinámico de respuestas nuevas en datos de marca.
+
+- `core/clientes.py`
+	- Login por `nombre + código`.
+	- Registro de cliente nuevo si no existe.
+	- Consulta de proyectos asociados al cliente autenticado.
+
+- `core/cotizaciones.py`
+	- Solicita características del proyecto.
+	- Genera un borrador textual de cotización.
+	- Confirma con el cliente y persiste cotización + estado inicial del proyecto.
+
+- `core/storage.py`
+	- Centraliza lectura/escritura JSON.
+	- Define rutas de datos (`data/clientes.json`, `data/marca.json`).
+	- Crea estructura base automáticamente si un archivo no existe.
+
+## Organización de los JSON
 
 - `data/clientes.json`
-	- Datos de clientes
-	- Proyectos por cliente
-	- Cotizaciones registradas y borradores confirmados
+	- Contiene la raíz `clientes`.
+	- Cada cliente se indexa por `código` y guarda:
+		- `nombre`
+		- `proyectos` (diccionario `nombre_proyecto -> estado`)
+		- `cotizaciones` (lista de cotizaciones)
+	- Cada cotización guarda:
+		- `id`
+		- `fecha_registro`
+		- `estado`
+		- `caracteristicas` (nombre, objetivo, alcance, tecnologías, presupuesto, fecha)
+		- `borrador` (texto final mostrado al cliente)
 
 - `data/marca.json`
-	- Información general de la marca
-	- Servicios ofrecidos
-	- Preguntas aprendidas por el chatbot
+	- `marca`: metadatos generales (`nombre`, `descripcion`).
+	- `servicios`: preguntas frecuentes definidas manualmente.
+	- `faq_aprendidas`: preguntas/respuestas aprendidas durante el uso del chatbot.
 
 ## Requisitos
 
