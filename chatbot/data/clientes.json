@@ -29,6 +29,28 @@
           "borrador": "\n--- BORRADOR DE PROYECTO ---\nCliente: Ana Lopez (Código: 9001)\nProyecto: App Movil\nObjetivo: Crear app para ventas\nAlcance: MVP con login y catalogo\nTecnologías/plataforma: Flutter + Firebase\nPresupuesto estimado: 15000 USD\nFecha deseada: 2026-05-01\nEstado inicial: Borrador confirmado por cliente\n-----------------------------"
         }
       ]
+    },
+    "2345": {
+      "nombre": "Alex",
+      "proyectos": {
+        "Agua Migaja": "Cotización recibida - En revisión comercial"
+      },
+      "cotizaciones": [
+        {
+          "id": "COT-001",
+          "fecha_registro": "2026-03-06 00:38:56",
+          "estado": "Borrador confirmado",
+          "caracteristicas": {
+            "nombre_proyecto": "Agua Migaja",
+            "objetivo": "Hacer un sistema de riego por goteo para invernaderos caseros",
+            "alcance": "App para cntrolar el sistema por wifi",
+            "tecnologias": "Esp32, App en adroid studio",
+            "presupuesto_estimado": "10000",
+            "fecha_deseada": "1 junio del 2026"
+          },
+          "borrador": "\n--- BORRADOR DE PROYECTO ---\nCliente: Alex (Código: 2345)\nProyecto: Agua Migaja\nObjetivo: Hacer un sistema de riego por goteo para invernaderos caseros\nAlcance: App para cntrolar el sistema por wifi\nTecnologías/plataforma: Esp32, App en adroid studio\nPresupuesto estimado: 10000\nFecha deseada: 1 junio del 2026\nEstado inicial: Borrador confirmado por cliente\n-----------------------------"
+        }
+      ]
     }
   }
 }
